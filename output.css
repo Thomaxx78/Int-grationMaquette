@@ -7,7 +7,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 23vw 55vw 23vw;
+  grid-template-columns: 23vw 53vw 25vw;
   grid-template-rows: 120vh;
   background-color: #0D0C0C;
 }
@@ -16,6 +16,7 @@ body nav {
   grid-row: 1/2;
   display: grid;
   grid-template-rows: 2vh 10vh 15vh 5vh 45vh 20vh 25vh;
+  grid-template-columns: 23vw;
 }
 body nav .logo {
   display: flex;
@@ -38,7 +39,7 @@ body nav .dash {
   background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
   border-radius: 10px;
   font-weight: 600;
-  color: #1E1E1E;
+  color: black;
   margin-bottom: 0;
   margin-top: auto;
   margin-right: auto;
@@ -97,7 +98,7 @@ body main {
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 2vh 10vh 15vh 70vh 5vh 20vh;
-  grid-template-columns: 20vw 35vw;
+  grid-template-columns: 20vw 30vw;
   align-items: center;
 }
 body main h1 {
@@ -190,7 +191,7 @@ body main .explore .portfolio {
 body main .graph {
   grid-column: 1/3;
   grid-row: 4/5;
-  width: 55vw;
+  width: 50vw;
   max-height: 70vh;
 }
 body main .recent {
@@ -218,12 +219,100 @@ body main .monnaie {
   grid-column: 1/3;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
   gap: 20px;
 }
-body main .monnaie div {
-  background: rgb(48, 53, 65) 50%/cover;
-  height: 50px;
+body main .monnaie .biteth {
+  display: flex;
+  align-items: center;
+  background: rgba(32, 35, 43, 0.7);
+  height: 60px;
+  width: 95vh;
   border-radius: 10px;
+  justify-content: space-between;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+body main .monnaie .biteth .bit {
+  color: white;
+}
+body main .monnaie .biteth .pbit {
+  color: rgba(255, 255, 255, 0.8);
+}
+body main .monnaie .biteth .trade {
+  color: white;
+  background-color: #0D0C0C;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+body section {
+  display: grid;
+  grid-column: 3/4;
+  grid-template-rows: 2vh 10vh 15vh 40vh 55vh;
+  grid-template-columns: 23vw;
+}
+body section .enhaut {
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+}
+body section .enhaut .notif {
+  margin-left: 1vw;
+  margin-right: auto;
+}
+body section .enhaut .profil {
+  margin-right: 1vw;
+  margin-left: auto;
+}
+body section h2 {
+  grid-row: 3/4;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body section .transactions {
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body section .transactions div {
+  display: flex;
+  align-items: center;
+}
+body section .transactions div .nom {
+  margin-left: 0.5vw;
+}
+body section .transactions div div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 1vw;
+}
+body section .assets {
+  grid-row: 5/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body section .assets h1 {
+  margin-top: 3vh;
+  color: white;
+}
+body section .assets .both {
+  height: 20vh;
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  border-radius: 30px;
+  width: 21vw;
+  margin-bottom: 0px;
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=output.css.map */
