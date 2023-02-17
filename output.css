@@ -21,15 +21,6 @@ body {
 body .navtel {
   display: none;
 }
-@media (max-width: 768px) {
-  body .navtel .logo span {
-    color: white;
-    font-size: 15px;
-  }
-  body .navtel .logo span img {
-    width: 15px;
-  }
-}
 @media (max-width: 1250px) {
   body .navtel {
     display: flex;
@@ -42,6 +33,18 @@ body .navtel {
     font-size: 35px;
     font-weight: 800;
   }
+}
+@media (max-width: 1250px) and (max-width: 768px) {
+  body .navtel .logo span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1250px) and (max-width: 768px) {
+  body .navtel .logo img {
+    width: 35px;
+  }
+}
+@media (max-width: 1250px) {
   body .navtel .search {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -498,6 +501,11 @@ body section .transactions {
     margin-top: 2vh;
   }
 }
+@media (max-width: 768px) {
+  body section .transactions {
+    gap: 1vh;
+  }
+}
 body section .transactions div {
   display: flex;
   align-items: center;
@@ -520,6 +528,12 @@ body section .assets {
 }
 body section .assets div {
   gap: 1vh;
+}
+@media (max-width: 768px) {
+  body section .assets div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 1250px) {
   body section .assets div {
@@ -551,6 +565,11 @@ body section .assets .both {
   color: white;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  body section .assets .both {
+    width: 80% !important;
+  }
+}
 @media (max-width: 1250px) {
   body section .assets .both {
     margin-top: 2vh;
@@ -579,6 +598,12 @@ body section .assets .both .text .numero {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body section .assets .both .text .numero .pbtc {
+    margin-right: 1vw;
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
