@@ -18,6 +18,58 @@ body {
     width: 100vw;
   }
 }
+body .navtel {
+  display: none;
+}
+@media (max-width: 768px) {
+  body .navtel .logo span {
+    color: white;
+    font-size: 15px;
+  }
+  body .navtel .logo span img {
+    width: 15px;
+  }
+}
+@media (max-width: 1250px) {
+  body .navtel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh;
+  }
+  body .navtel .logo span {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+  }
+  body .navtel .search {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+    gap: 5px;
+    width: 20%;
+    height: 4vh;
+    margin-left: 4vh;
+  }
+  body .navtel .search img {
+    width: 20px;
+  }
+  body .navtel .search input {
+    width: 95%;
+    height: 30px;
+    border: none;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1250px) and (max-width: 1250px) {
+  body .navtel .search input {
+    display: none;
+  }
+}
 body nav {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -25,9 +77,10 @@ body nav {
   grid-template-rows: 2vh 10vh 15vh 5vh 45vh 20vh 25vh;
   grid-template-columns: 23vw;
 }
-@media screen and (max-width: 1250px) {
+@media (max-width: 1250px) {
   body nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 }
 body nav .logo {
@@ -39,6 +92,11 @@ body nav .logo {
   font-size: 40px;
   font-weight: 800;
   color: white;
+}
+@media (max-width: 1250px) {
+  body nav .logo {
+    display: none;
+  }
 }
 body nav .dash {
   display: flex;
@@ -60,6 +118,21 @@ body nav .dash {
   align-items: center;
   font-size: 25px;
 }
+@media (max-width: 1250px) {
+  body nav .dash {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  body nav .dash {
+    font-size: 20px;
+  }
+  body nav .dash img {
+    width: 20px;
+  }
+}
 body nav .dash img {
   height: 30px;
 }
@@ -71,6 +144,29 @@ body nav .nav {
   list-style: none;
   align-items: center;
   color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1250px) {
+  body nav .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    font-size: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 2vw;
+  }
+  body nav .nav img {
+    width: 50px;
+  }
+  body nav .nav span {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  body nav .nav img {
+    width: 35px;
+  }
 }
 body nav .nav span {
   grid-column: 2/3;
@@ -98,6 +194,14 @@ body nav .logout {
   gap: 10px;
   margin-bottom: 25px;
   margin-top: auto;
+}
+@media (max-width: 1250px) {
+  body nav .logout {
+    margin-top: 2vh;
+  }
+  body nav .logout p {
+    display: none;
+  }
 }
 body nav .logout img {
   height: 30px;
@@ -166,10 +270,7 @@ body main .balance {
 }
 @media (max-width: 1250px) {
   body main .balance {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    display: none;
   }
 }
 body main .balance .count {
@@ -227,7 +328,7 @@ body main .explore {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 4vh;
+    margin-top: 2vh;
   }
 }
 body main .explore .portfolio {
@@ -284,6 +385,11 @@ body main .monnaie {
   gap: 20px;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  body main .monnaie {
+    flex-direction: row;
+  }
+}
 @media (max-width: 1250px) {
   body main .monnaie {
     width: 80%;
@@ -302,6 +408,15 @@ body main .monnaie .biteth {
   padding-left: 1vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
+}
+@media (max-width: 768px) {
+  body main .monnaie .biteth {
+    flex-direction: column;
+    height: 45vh;
+  }
+  body main .monnaie .biteth img {
+    width: 75px;
+  }
 }
 @media (max-width: 1250px) {
   body main .monnaie .biteth {
@@ -403,6 +518,9 @@ body section .assets {
   flex-direction: column;
   justify-content: space-around;
 }
+body section .assets div {
+  gap: 1vh;
+}
 @media (max-width: 1250px) {
   body section .assets div {
     display: flex;
@@ -431,6 +549,7 @@ body section .assets .both {
   border-radius: 30px;
   width: 21vw;
   color: white;
+  margin-bottom: 10px;
 }
 @media (max-width: 1250px) {
   body section .assets .both {
